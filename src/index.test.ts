@@ -3,11 +3,9 @@ import * as RS from './index';
 
 describe('jaime-rs', () => {
     describe('getCsvData', () => {
-        it('reads', () => {
-            const data = RS.getCsvData('../src/test.csv');
-            const array = RS.convertCsvToArray(data);
-            console.log(array);
-            assert.ok(array);
+        it.only('reads', () => {
+            // RS.createCsvTestFile('../src/test.csv');
+            RS.getCsvData(45, '../src/test.csv');
         });
     });
 
@@ -41,7 +39,7 @@ describe('jaime-rs', () => {
                 { newX: 2.220446049250313e-16, newY: 2.82842712474619, value: 5 }
             ];
 
-            const rotatedArray = RS.rotateArray(45, array);
+            const rotatedArray = RS.rotateArray(45, array, 0);
 
             assert.deepEqual(rotatedArray, expectedArray);
         });
