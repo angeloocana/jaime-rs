@@ -1,0 +1,9 @@
+{
+  "generator-ptz": {
+    "promptValues": {
+      "appname": "jaime-rs",
+      "githubAuthor": "angeloocana",
+      "codecovToken": "48cf9c1d-86b0-46bc-b5e1-1dc590f62e0d"
+    }
+  }
+}
